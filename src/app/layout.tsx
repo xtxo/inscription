@@ -12,7 +12,7 @@ import { ReactNode } from "react";
 import ThemeRegister from "@/components/ThemeRegister";
 
 export const metadata: Metadata = {
-  title: "Polaris - Automatic Alpha Script",
+  title: "Polaris - Automatic Alpha Script-v888",
   description: "Automatic Alpha Script",
 };
 
