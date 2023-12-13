@@ -7,6 +7,8 @@ import {
   celo,
   classic,
   confluxESpace,
+  coreDao,
+  cronos,
   eos,
   fantom,
   filecoin,
@@ -44,11 +46,55 @@ export const shibarium = defineChain({
   },
 });
 
+export const ethw = defineChain({
+  id: 10001,
+  name: "ETHW-mainnet",
+  network: "ETHW-mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "ETHW",
+    symbol: "ETHW",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://mainnet.ethereumpow.org"],
+    },
+    public: {
+      http: ["https://mainnet.ethereumpow.org"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://mainnet.ethwscan.com" },
+  },
+});
+
+export const kcc = defineChain({
+  id: 321,
+  name: "KCC Mainnet",
+  network: "KCC Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "KCS",
+    symbol: "KCS",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://kcc-rpc.com"],
+    },
+    public: {
+      http: ["https://kcc-rpc.com"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://explorer.kcc.io/en" },
+  },
+});
+
 export const inscriptionChains = {
   eth: mainnet,
   bsc,
   opBNB,
-  okc,
+  // okc,
   polygon,
   fantom,
   avalanche,
@@ -57,6 +103,10 @@ export const inscriptionChains = {
   base,
   zkSync,
   classic,
+  cronos,
+  kcc,
+  coreDao,
+  ethw,
   eos,
   neonMainnet,
   linea,
