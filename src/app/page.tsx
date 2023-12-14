@@ -115,11 +115,11 @@ export default function Home() {
       return;
     }
 
-    // if (!inscription) {
-    //   setLogs((logs) => [handleLog("没有铭文", "error"), ...logs]);
-    //   setRunning(false);
-    //   return;
-    // }
+    if (!inscription) {
+      setLogs((logs) => [handleLog("没有铭文", "error"), ...logs]);
+      setRunning(false);
+      return;
+    }
 
     setRunning(true);
   }, [inscription, privateKeys, radio, toAddress]);
