@@ -1,3 +1,4 @@
+
 import "./globals.css";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -12,7 +13,7 @@ import { ReactNode } from "react";
 import ThemeRegister from "@/components/ThemeRegister";
 
 export const metadata: Metadata = {
-  title: "Polaris - Automatic Alpha Script-v888",
+  title: "Polaris - Automatic Alpha Script-v889",
   description: "Automatic Alpha Script",
 };
 
