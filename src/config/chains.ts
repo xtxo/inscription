@@ -13,8 +13,12 @@ import {
   fantom,
   filecoin,
   gnosis,
+  iotex,
+  klaytn,
   linea,
   mainnet,
+  mantle,
+  meter,
   neonMainnet,
   okc,
   opBNB,
@@ -90,6 +94,28 @@ export const kcc = defineChain({
   },
 });
 
+export const mapo = defineChain({
+  id: 22776,
+  name: "MAP Mainnet",
+  network: "MAP Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "MAPO",
+    symbol: "MAPO",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://rpc.maplabs.io"],
+    },
+    public: {
+      http: ["https://rpc.maplabs.io"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://mapscan.io" },
+  },
+});
+
 export const inscriptionChains = {
   eth: mainnet,
   bsc,
@@ -103,6 +129,11 @@ export const inscriptionChains = {
   base,
   zkSync,
   classic,
+  meter,
+  iotex,
+  klaytn,
+  mantle,
+  mapo,
   cronos,
   kcc,
   coreDao,
